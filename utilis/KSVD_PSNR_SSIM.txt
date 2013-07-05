@@ -1,0 +1,35 @@
+**********************************
+**********************************
+SSIM barbara_5      0.964 PSNR 	 	 38.11
+SSIM barbara_10 	0.936 PSNR 	 	 34.54
+SSIM barbara_20 	0.881 PSNR 	 	 30.86
+SSIM barbara_25 	0.850 PSNR 	 	 29.57
+SSIM barbara_30 	0.821 PSNR 	 	 28.55
+**********************************
+**********************************
+SSIM boat_5 	 	0.939 PSNR 	 	 37.14
+SSIM boat_10 	 	0.883 PSNR 	 	 33.68
+SSIM boat_20 	 	0.805 PSNR 	 	 30.42
+SSIM boat_25 	 	0.772 PSNR 	 	 29.34
+SSIM boat_30 	 	0.744 PSNR 	 	 28.46
+**********************************
+**********************************
+SSIM couple_5 	 	0.950 PSNR 	 	 37.24
+SSIM couple_10 	 	0.900 PSNR 	 	 33.62
+SSIM couple_20 	 	0.817 PSNR 	 	 30.08
+SSIM couple_25 	 	0.780 PSNR 	 	 28.92
+SSIM couple_30 	 	0.745 PSNR 	 	 27.95
+**********************************
+**********************************
+SSIM lena_5 	 	0.944 PSNR 	 	 38.48
+SSIM lena_10 	 	0.910 PSNR 	 	 35.52
+SSIM lena_20 	 	0.861 PSNR 	 	 32.39
+SSIM lena_25 	 	0.842 PSNR 	 	 31.34
+SSIM lena_30 	 	0.824 PSNR 	 	 30.44
+**********************************
+**********************************
+SSIM man_5          0.952 PSNR 	 	 37.50
+SSIM man_10 	 	0.902 PSNR 	 	 33.63
+SSIM man_20 	 	0.815 PSNR 	 	 30.16
+SSIM man_25 	 	0.780 PSNR 	 	 29.13
+SSIM man_30 	 	0.750 PSNR 	 	 28.29

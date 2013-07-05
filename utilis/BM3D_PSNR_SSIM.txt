@@ -1,0 +1,35 @@
+**********************************
+**********************************
+SSIM Lena512_est_s5 	 	0.942 PSNR 	 	 38.46
+SSIM Lena512_est_s10 	 	0.915 PSNR 	 	 35.80
+SSIM Lena512_est_s20 	 	0.875 PSNR 	 	 32.98
+SSIM Lena512_est_s25 	 	0.859 PSNR 	 	 32.02
+SSIM Lena512_est_s30 	 	0.843 PSNR 	 	 31.22
+**********************************
+**********************************
+SSIM barbara_est_s5 	 	0.964 PSNR 	 	 38.27
+SSIM barbara_est_s10 	 	0.942 PSNR 	 	 34.96
+SSIM barbara_est_s20 	 	0.905 PSNR 	 	 31.77
+SSIM barbara_est_s25 	 	0.887 PSNR 	 	 30.71
+SSIM barbara_est_s30 	 	0.868 PSNR 	 	 29.81
+**********************************
+**********************************
+SSIM boat_est_s5            0.938 PSNR 	 	 37.25
+SSIM boat_est_s10           0.887 PSNR 	 	 33.91
+SSIM boat_est_s20           0.826 PSNR 	 	 30.88
+SSIM boat_est_s25           0.801 PSNR 	 	 29.90
+SSIM boat_est_s30           0.779 PSNR 	 	 29.11
+**********************************
+**********************************
+SSIM couple_est_s5          0.951 PSNR 	 	 37.13
+SSIM couple_est_s10 	 	0.909 PSNR 	 	 33.86
+SSIM couple_est_s20 	 	0.847 PSNR 	 	 30.68
+SSIM couple_est_s25 	 	0.820 PSNR 	 	 29.65
+SSIM couple_est_s30 	 	0.794 PSNR 	 	 28.81
+**********************************
+**********************************
+SSIM man_est_s5             0.954 PSNR 	 	 37.78
+SSIM man_est_s10            0.907 PSNR 	 	 33.97
+SSIM man_est_s20            0.833 PSNR 	 	 30.58
+SSIM man_est_s25        	0.804 PSNR 	 	 29.61
+SSIM man_est_s30            0.780 PSNR 	 	 28.86
