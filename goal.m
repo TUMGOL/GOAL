@@ -38,6 +38,10 @@ end
 
 if kappa ~= 0
     [~,Si,Vi]       = svd(Omega);
+    if para.zmean
+        Vi = Vi(:,1:end-1);           % rank n-1
+        Si = Si(1:end-1,1:end-1);     % rank n-1
+    end
     LogDetTerm      =  log(prod(diag(Si).^2))-SUB_LOG_DET;
     g_term          = -kappa*(LogDetTerm);
     f0              =  f0 + g_term;
@@ -60,12 +64,14 @@ for k = 1:para.max_iter
     if kappa ~= 0
         Omega_grad  = Omega_grad - 2*kappa*Omega*Vi*diag(1./diag(Si).^2)*Vi';
     end
-    
-    
-    
+            
     %% Transpose for update step on the Oblique manifold
     Omega_grad = Omega_grad';
     Omega      = Omega';
+    
+    if para.zmean   % project operator atoms onto 1-normal plane
+        Omega_grad = bsxfun(@minus, Omega_grad, mean(Omega_grad, 1));
+    end
     
     % Projection of the gradient onto the tangent space via
     % dO = dO - O*ddiag(O'*dO);
@@ -74,6 +80,10 @@ for k = 1:para.max_iter
     if numel(Omega_grad(isnan(Omega_grad)))
         Omega_grad(isnan(Omega_grad)) = 1e10;
         %return
+    end
+    
+    if para.zmean   % project operator atoms onto 1-normal plane (again for numerical reasons)
+        Omega_grad = bsxfun(@minus, Omega_grad, mean(Omega_grad, 1));
     end
     
     %% Computation of Conjugate Direction
@@ -128,6 +138,10 @@ for k = 1:para.max_iter
         
         if kappa ~= 0
             [~,Si,Vi]      = svd(Omega_c);
+            if para.zmean
+                Vi = Vi(:,1:end-1);           % rank n-1
+                Si = Si(1:end-1,1:end-1);     % rank n-1
+            end
             g_term      =  -kappa*(log(prod(diag(Si).^2))-SUB_LOG_DET);
             f0         = f0 + g_term;
         end

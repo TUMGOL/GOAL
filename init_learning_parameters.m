@@ -5,7 +5,7 @@ function para = init_learning_parameters()
     para.q        = 2;
     para.kappa    = 1e5;
     para.nu       = 1e4;
-    para.mu    = 1e6;
+    para.mu       = 1e6;
     para.max_iter = 300;
     % LogAbs, LogSquare, PNormAbs, PNormSquare, AtanAbs, AtanSquare
     para.Sp_type  = 'LogSquare'; 
