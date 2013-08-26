@@ -42,7 +42,7 @@ if kappa ~= 0
         Vi = Vi(:,1:end-1);           % rank n-1
         Si = Si(1:end-1,1:end-1);     % rank n-1
     end
-    LogDetTerm      =  log(prod(diag(Si).^2))-SUB_LOG_DET;
+    LogDetTerm      =  2*sum(log(diag(Si)))-SUB_LOG_DET;
     g_term          = -kappa*(LogDetTerm);
     f0              =  f0 + g_term;
 end
@@ -142,7 +142,7 @@ for k = 1:para.max_iter
                 Vi = Vi(:,1:end-1);           % rank n-1
                 Si = Si(1:end-1,1:end-1);     % rank n-1
             end
-            g_term      =  -kappa*(log(prod(diag(Si).^2))-SUB_LOG_DET);
+            g_term      =  -kappa*(2*sum(log(diag(Si)))-SUB_LOG_DET);
             f0         = f0 + g_term;
         end
 
