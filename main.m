@@ -13,6 +13,7 @@ para            = init_learning_parameters();   % load defaults
 % general
 precision       = 'single';     % floating point precision 'single'/'double'
 para.zmean      = 1;            % zero mean training patches and operator
+para.verbose 	= 10; 			% ~0 print additional information
 
 % training data
 data_path       = '.\training\';% directory containing training images
