@@ -72,3 +72,12 @@ end
 
 %% start learning
 para = goal(S, para);
+
+%% Inject "mean" dimension again
+if para.zmean
+    [S Si U]=svd(para.Omega);
+    [k n]=size(para.Omega);
+    U(n,:)=ones(1,n)/sqrt(n);
+    Si(n,n)=1;
+    para.Omega=S*Si*U';
+end
